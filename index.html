@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Facebook / TikTok 广告户 · BM · 粉丝页 · 蓝标认证 · 封户免费换户 | ipcloak.ai Accounts</title>
   <meta name="description" content="ipcloak.ai 旗下广告账户供应 + Meta 蓝标认证服务。FB 户 4%、TK 户 5.5%、BM $15、粉丝页 $20，封户免费换户。Facebook / Instagram 蓝标认证 + WhatsApp Business 绿勾认证，Telegram 即时下单。">
-  <meta name="keywords" content="Facebook 户, FB 户, TikTok 户, TK 户, BM, 粉丝页, 蓝标认证, Meta Verified, Facebook 蓝标, Instagram 蓝标, WhatsApp 绿勾, WhatsApp Business 认证, 海外广告户, 跨境广告账户, 封户换户, 广告户出售, FB BM 购买, ipcloak.ai">
+  <meta name="keywords" content="Facebook 户, FB 户, TikTok 户, TK 户, BM, 粉丝页, 蓝标认证, Meta Verified, Facebook 蓝标, Instagram 蓝标, WhatsApp 绿勾, WhatsApp Business 认证, 海外广告户, 跨境广告账户, 封户换户, 广告户出售, FB BM 购买, 金融户, FN, JZ 户, 借贷户, BC 户, 博彩户, ZJ 户, FP, 翻牌, 黑五, Q4, 跨境电商户, 二级户, 三级户, 美区户, 欧洲户, 东南亚户, ipcloak.ai">
   <meta name="author" content="ipcloak.ai">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://accounts.ipcloak.ai/">
@@ -211,6 +211,73 @@
     .notice-card h3 { font-family: var(--ipcloak-font-display); font-size: 1rem; margin: 0 0 0.65rem; color: #fbbf24; }
     .notice-card ol { margin: 0; padding-left: 1.3rem; color: var(--ipcloak-text-muted); line-height: 1.75; font-size: 0.92rem; }
     .notice-card ol li { margin-bottom: 0.3rem; }
+
+    /* 行业覆盖区块 */
+    .industry-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    @media (max-width: 900px) { .industry-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .industry-grid { grid-template-columns: 1fr; } }
+    .industry-card {
+      padding: 1.1rem 1.25rem;
+      background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--ipcloak-border);
+      border-radius: var(--ipcloak-radius-lg);
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .industry-card:hover { transform: translateY(-2px); border-color: var(--ipcloak-border-hover); }
+    .industry-card .tier-tag {
+      display: inline-block;
+      width: fit-content;
+      padding: 0.18rem 0.55rem;
+      border-radius: var(--ipcloak-radius-full);
+      font-family: var(--ipcloak-font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+    .industry-card .tier-tag.t1 { background: rgba(34,197,94,0.1); color: #4ade80; border: 1px solid rgba(34,197,94,0.25); }
+    .industry-card .tier-tag.t2 { background: rgba(245,158,11,0.1); color: #fbbf24; border: 1px solid rgba(245,158,11,0.25); }
+    .industry-card .tier-tag.t3 { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
+    .industry-card h4 {
+      font-family: var(--ipcloak-font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0;
+      color: var(--ipcloak-text);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .industry-card h4 .code {
+      font-family: var(--ipcloak-font-mono);
+      font-size: 0.78rem;
+      color: var(--ipcloak-text-subtle);
+      font-weight: 400;
+    }
+    .industry-card p {
+      margin: 0;
+      color: var(--ipcloak-text-muted);
+      font-size: 0.85rem;
+      line-height: 1.55;
+    }
+    .industry-disclaimer {
+      max-width: 760px;
+      margin: 2rem auto 0;
+      padding: 1.1rem 1.5rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--ipcloak-border);
+      border-radius: var(--ipcloak-radius-lg);
+      text-align: center;
+      color: var(--ipcloak-text-muted);
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+    .industry-disclaimer strong { color: #fbbf24; }
   </style>
 </head>
 <body class="grid-bg">
@@ -223,6 +290,7 @@
       </a>
       <div class="nav-links">
         <a href="#pricing">价目表</a>
+        <a href="#industries">行业</a>
         <a href="#process">下单流程</a>
         <a href="#faq">FAQ</a>
         <a href="/en/" class="lang-switch">EN</a>
@@ -392,6 +460,83 @@
           <h3>蓝标 / 绿勾认证</h3>
           <p>Facebook / Instagram Meta Verified 蓝标 + WhatsApp Business 绿勾认证全流程托管，主流行业 80%+ 通过率。</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Coverage (与户型独立的能力展示) -->
+  <section class="ipcloak-section" id="industries">
+    <div class="ipcloak-container">
+      <div class="ipcloak-section-header">
+        <span class="ipcloak-eyebrow">资源能力</span>
+        <h2>我们的户能跑<span class="aurora-text"> 哪些行业</span></h2>
+        <p>账户本身不绑定行业。下单时告知投放方向，我们按渠道资源和审核宽容度匹配合适的户型。下面是当前覆盖范围。</p>
+      </div>
+
+      <!-- Tier 1: 合规主流 -->
+      <h3 style="font-size:0.85rem;color:#4ade80;text-transform:uppercase;letter-spacing:0.1em;margin:2rem 0 1rem;font-weight:600;">🟢 主流合规 · 标准审核</h3>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <span class="tier-tag t1">T1</span>
+          <h4>跨境电商</h4>
+          <p>Shopify · 独立站 · 一件代发 · DTC 品牌 · Q4 黑五大促</p>
+        </div>
+        <div class="industry-card">
+          <span class="tier-tag t1">T1</span>
+          <h4>App 推广</h4>
+          <p>App 下载 · 移动游戏 · 休闲游戏 · 工具类 App · 订阅应用</p>
+        </div>
+        <div class="industry-card">
+          <span class="tier-tag t1">T1</span>
+          <h4>内容订阅</h4>
+          <p>媒体订阅 · 流媒体 · SaaS · 课程 · Dating 社交</p>
+        </div>
+      </div>
+
+      <!-- Tier 2: 强监管 -->
+      <h3 style="font-size:0.85rem;color:#fbbf24;text-transform:uppercase;letter-spacing:0.1em;margin:2.5rem 0 1rem;font-weight:600;">🟡 强监管行业 · 需经验配置</h3>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <span class="tier-tag t2">T2</span>
+          <h4>金融 <span class="code">/ FN</span></h4>
+          <p>美股 · 加密货币 · Forex 外汇 · 投资课程 · 理财产品</p>
+        </div>
+        <div class="industry-card">
+          <span class="tier-tag t2">T2</span>
+          <h4>美妆 / 减肥 / 保健</h4>
+          <p>减脂 · 美容护肤 · 保健品 · 美妆电商 · 私护类目</p>
+        </div>
+        <div class="industry-card">
+          <span class="tier-tag t2">T2</span>
+          <h4>翻牌拉新 <span class="code">/ FP</span></h4>
+          <p>用户拉新 · 翻牌玩法 · 抽奖派发 · 红包活动 · 留资模式</p>
+        </div>
+      </div>
+
+      <!-- Tier 3: 高风险 -->
+      <h3 style="font-size:0.85rem;color:#f87171;text-transform:uppercase;letter-spacing:0.1em;margin:2.5rem 0 1rem;font-weight:600;">🔴 高风险行业 · 一对一沟通</h3>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <span class="tier-tag t3">T3</span>
+          <h4>借贷 <span class="code">/ JZ</span></h4>
+          <p>贷款 · 借款 · 网贷 · 现金贷 · Loan / Credit 类目</p>
+        </div>
+        <div class="industry-card">
+          <span class="tier-tag t3">T3</span>
+          <h4>博彩 <span class="code">/ BC</span></h4>
+          <p>体育投注 · 真人 · 棋牌 · 彩票 · iGaming · Casino</p>
+        </div>
+        <div class="industry-card">
+          <span class="tier-tag t3">T3</span>
+          <h4>特殊行业 <span class="code">/ ZJ</span></h4>
+          <p>Dating 边缘 · 高客单 · 特殊垂类 · 个案沟通定方案</p>
+        </div>
+      </div>
+
+      <div class="industry-disclaimer">
+        <strong>行业适配说明：</strong>不同行业需要不同的户型、BM、粉丝页、落地页和 Cloak 配置。<br>
+        Tier 2 / Tier 3 行业请直接联系 Telegram 客服 <span style="color:var(--ipcloak-cyan)">@webpage1688</span>，按你的具体业务给出定制方案 + 报价。<br>
+        我们不预先开放细节，避免投放策略被同行抄袭。
       </div>
     </div>
   </section>
