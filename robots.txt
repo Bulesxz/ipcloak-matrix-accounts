@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://accounts.ipcloak.ai/sitemap.xml
+
+# 矩阵聚合 sitemap (Google 通过此发现全部子站的页面)
+Sitemap: https://cdn.ipcloak.ai/sitemap-index.xml
